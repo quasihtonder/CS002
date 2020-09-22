@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a = 1+(rand()% 100);
+	int b;
+	cout << "What number do you going to pick between 1-100?" << endl;
+	cin >> b;
+	int a1 = abs(21-a);
+	int b1 = abs(21-b);
+	cout << "You input " << b << "." << endl;
+	cout << "Dealer input " << a << "." << endl;
+	if (a1 < b1 || a1 == b1) {
+		cout << "Dealer wins." << endl;
+	}
+	else {
+		cout << "player wins." << endl;
+	}
+	return 0;
+}
